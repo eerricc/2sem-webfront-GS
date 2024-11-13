@@ -1,8 +1,12 @@
 :root{
-    --pri: ;
-    --sec: ;
-    --ter: ;
-    --qua: ;
-    --dark: #2b2b2b;
-    --white: #fff;
+    --green0: #79E381;
+    --green1: #48C353;
+    --green2: #20AF24;
+    --blue0: #63CFEA;
+    --blue1: #30BEE1;
+    --blue2: #009CD1;
+    --yellow0: #FFD75F;
+    --gray0: #f2f2f2;
+    --gray1: #dedede;
+    --gray2: #1e1e1e;
 }
