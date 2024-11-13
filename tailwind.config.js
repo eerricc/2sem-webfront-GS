@@ -4,7 +4,11 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'form-bg': "url(/assets/suncloud.avif)",
+      },
+    },
   },
   plugins: [],
 }

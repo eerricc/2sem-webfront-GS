@@ -8,7 +8,7 @@ import Home from './routes/Home/Home.jsx'
 import About from './routes/About/About.jsx'
 import Error from './routes/Error/Error.jsx'
 import Login from './routes/Login/Login.jsx'
-import Registration from './routes/Registration/Registration.jsx'
+import SignUp from './routes/SignUp/SignUp.jsx'
 import Solution from './routes/Solution/Solution.jsx'
 
 
@@ -22,7 +22,7 @@ const router = createBrowserRouter([
       {path:'/', element:<Home/>},
       {path:'/about', element:<About/>},
       {path:'/login', element:<Login/>},
-      {path:'/registration', element:<Registration/>},
+      {path:'/signup', element:<SignUp/>},
       {path:'/solution', element:<Solution/>},
     ]
   }
