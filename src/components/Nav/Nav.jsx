@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 
-import Sun from '/assets/sun.webp'
+import Sun from '../../assets/sun.webp'
 
 import React from 'react'
 

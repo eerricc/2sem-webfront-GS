@@ -6,7 +6,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'form-bg': "url(/assets/suncloud.avif)",
+        'form-bg': "url(/suncloud.avif)",
       },
     },
   },
