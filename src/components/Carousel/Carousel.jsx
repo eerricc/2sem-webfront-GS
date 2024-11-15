@@ -17,23 +17,23 @@ const Carousel = (props) => {
 
     return (
     <div className="relative flex justify-center items-center w-[80%] h-96">
-        <FaArrowLeft className="absolute w-8 h-8 text-[var(--gray1)] cursor-pointer rounded-full left-4" onClick={prevSlide}/>
+        <FaArrowLeft className="absolute w-8 h-8 text-[var(--green2)] cursor-pointer rounded-full left-4" onClick={prevSlide}/>
         {props.slides.map((item, index) => (
             <img 
             src={item.src} 
             alt={item.alt} 
             key={index}
-            className={slide === index? "rounded-lg w-full h-full" : "rounded-lg w-full h-full hidden"}
+            className={slide === index? "rounded-lg border border-[var(--gray2)] w-full h-full" : "rounded-lg border border-[var(--gray2)] w-full h-full hidden"}
             />
         ))}
-        <FaArrowRight className="absolute w-8 h-8 text-[var(--gray1)] cursor-pointer rounded-full right-4" onClick={nextSlide}/>
+        <FaArrowRight className="absolute w-8 h-8 text-[var(--green2)] cursor-pointer rounded-full right-4" onClick={nextSlide}/>
         <span className="flex absolute bottom-4">
             {props.slides.map((_, index) => (
                 <button 
                     key={index}
                     onClick={() => setSlide(index)}
-                    className={slide === index ? "bg-[var(--gray2)] h-2 w-2 rounded-full border-none outline-none my-0 mx-1" :
-                                                 "bg-[var(--gray0)] h-2 w-2 rounded-full border-none outline-none my-0 mx-1 "}
+                    className={slide === index ? "bg-[var(--blue2)] h-2 w-2 rounded-full border-none outline-none my-0 mx-1" :
+                                                 "bg-[var(--yellow1)] h-2 w-2 rounded-full border-none outline-none my-0 mx-1 "}
                 />
             ))}
         </span>
