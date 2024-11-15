@@ -14,7 +14,7 @@ const Home = () => {
   ]
 
   return (
-    <section className='flex grow flex-col items-center'>
+    <section className='flex grow flex-col items-center bg-[var(--gray1)]'>
       <h1>Home</h1>
       <Carousel slides={slides}/>
     </section>

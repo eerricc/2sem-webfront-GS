@@ -1,4 +1,4 @@
-import { useParams, useNavigate } from 'raect-router-dom'
+import { useParams, useNavigate } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 
 import React from 'react'
@@ -56,7 +56,7 @@ const SignUp = () => {
       <div className='mx-auto p-20 bg-[var(--gray1)] rounded-lg shadow-lg bg-form-bg bg-cover bg-center'>
         <h1 className='text-3xl text-center mb-6 font-semibold text-[var(--gray0)]'>Sign Up</h1>
         
-        <form action="" onSubmit={handleSubmit} className='space-y-4 flex flex-col items-center'>
+        <form action="" onSubmit={handleSubmit} className='space-y-5 flex flex-col items-center'>
 
           <input 
             type="text"

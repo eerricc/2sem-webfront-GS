@@ -22,11 +22,12 @@ const Login = () => {
 
   const handleSubmit =(e)=>{
     e.preventDefault();
-    if(validade()){
+    if(validate()){
       let token = 
         Math.random().toString(16).substring(2) + Math.random().toString(16).substring(2)
         sessionStorage.setItem("user", user.current.value);
         sessionStorage.setItem("password", token);
+        navigate('/')
         alert("parabens voce fez o login")
     } else{
       alert("user/password invalid")
@@ -49,20 +50,22 @@ const Login = () => {
         <div className='mx-auto p-20 bg-[var(--gray1)] rounded-lg shadow-lg bg-form-bg bg-cover bg-center'>
           <h1 className='text-3xl text-center mb-6 font-semibold text-[var(--gray0)]'>Login</h1>
           
-          <form action="" className='space-y-4 flex flex-col items-center'>
+          <form action="" onSubmit={handleSubmit} className='space-y-4 flex flex-col items-center'>
             
             <input 
               type="text" 
               id='user'
               className='w-full px-4 py-2 bg-[var(--gray0)] border border-[var(--gray2)] rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--yellow0)]'
-              placeholder='user'/>
+              placeholder='user'
+              ref={user}/>
               
             
             <input
               type="text" 
               id='password'
               className='w-full px-4 py-2 bg-[var(--gray0)] border border-[var(--gray2)] rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--yellow0)]'
-              placeholder='password'/>
+              placeholder='password'
+              ref={password}/>
             
             <button className='btn text-[var(--gray0)] bg-[var(--green1)] hover:bg-[var(--green2)]'>Login</button>
             
