@@ -45,9 +45,12 @@ const Login = () => {
 
   return (
       <section className='bg-gradient-to-br from-[var(--yellow1)] via-[var(--blue2)] via-[var(--blue0)] to-[var(--blue0)] flex grow justify-center items-center '>
+        
         <div className='mx-auto p-20 bg-[var(--gray1)] rounded-lg shadow-lg bg-form-bg bg-cover bg-center'>
           <h1 className='text-3xl text-center mb-6 font-semibold text-[var(--gray0)]'>Login</h1>
+          
           <form action="" className='space-y-4 flex flex-col items-center'>
+            
             <input 
               type="text" 
               id='user'
@@ -62,8 +65,11 @@ const Login = () => {
               placeholder='password'/>
             
             <button className='btn text-[var(--gray0)] bg-[var(--green1)] hover:bg-[var(--green2)]'>Login</button>
+            
             <Link to='/signup' className='btn text-[var(--blue0)] hover:text-[var(--blue2)] bg-[var(--blue2)] hover:bg-[var(--blue0)]'>Create an account</Link>
+
           </form>
+        
         </div>
       </section>
   )
