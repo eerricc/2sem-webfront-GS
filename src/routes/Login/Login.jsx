@@ -31,6 +31,10 @@ const Login = () => {
         Math.random().toString(16).substring(2)
         sessionStorage.setItem("user", user.current.value);
         sessionStorage.setItem("password", token);
+
+        const event = new Event("loginChange");
+        window.dispatchEvent(event);
+
         navigate('/')
         alert("parabens voce fez o login")
     } else{
