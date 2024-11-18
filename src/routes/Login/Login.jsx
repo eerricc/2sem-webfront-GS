@@ -14,9 +14,12 @@ const Login = () => {
 
   function validate(){
     for(let i = 0; i < users.length; i++){
-      if(users[i].user == user.current.value && users[i].password == password.current.value){
+      if(
+        users[i].user == user.current.value && 
+        users[i].password == password.current.value)
+        {
         return true;
-      }
+        }
     }
   }
 
@@ -24,7 +27,8 @@ const Login = () => {
     e.preventDefault();
     if(validate()){
       let token = 
-        Math.random().toString(16).substring(2) + Math.random().toString(16).substring(2)
+        Math.random().toString(16).substring(2) + 
+        Math.random().toString(16).substring(2)
         sessionStorage.setItem("user", user.current.value);
         sessionStorage.setItem("password", token);
         navigate('/')
