@@ -7,6 +7,7 @@ export default {
     extend: {
       backgroundImage: {
         'form-bg': "url(/suncloud.avif)",
+        'dark-form-bg': "url(/mooncloud.avif)"
       },
     },
   },

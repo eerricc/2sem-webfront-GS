@@ -51,10 +51,11 @@ const SignUp = () => {
   }, [id])
   
   return (
-    <section className='bg-gradient-to-br from-[var(--yellow1)] via-[var(--blue2)] via-[var(--blue0)] to-[var(--blue0)] flex grow justify-center items-center'>
+    <section className='bg-gradient-to-br from-[var(--yellow1)] via-[var(--blue2)] to-[var(--blue0)]
+                          dark:from-[var(--gray2)] from-10% dark:via-[var(--gray3)] via-30% dark:to-[var(--gray3)] flex grow justify-center items-center '>
       
-      <div className='mx-auto p-20 bg-[var(--gray1)] rounded-lg shadow-lg bg-form-bg bg-cover bg-center'>
-        <h1 className='text-3xl text-center mb-6 font-semibold text-[var(--gray0)]'>Sign Up</h1>
+      <div className='mx-auto p-20 bg-[var(--gray1)] rounded-lg shadow-lg bg-form-bg dark:bg-dark-form-bg bg-cover bg-center'>
+        <h1 className='text-3xl text-center mb-6 font-bold text-[var(--gray0)] dark:text-[var(--gray2)]'>Sign Up</h1>
         
         <form action="" onSubmit={handleSubmit} className='space-y-5 flex flex-col items-center'>
 
@@ -63,20 +64,22 @@ const SignUp = () => {
             name="user" 
             placeholder='user'
             value={users.user}
+            autoComplete='off'
             onChange={handleChange}
-            className='w-full px-4 py-2 bg-[var(--gray0)] border border-[var(--gray2)] rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--yellow0)]'
+            className='w-full px-4 py-2 bg-[var(--gray0)] border border-[var(--gray2)] rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--yellow0)] dark:focus:ring-[var(--gray0)]'
           />
 
           <input 
             type="password"
             name='password'
             placeholder='password'
+            autoComplete='off'
             value={users.password}
             onChange={handleChange}
-            className='w-full px-4 py-2 bg-[var(--gray0)] border border-[var(--gray2)] rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--yellow0)]'
+            className='w-full px-4 py-2 bg-[var(--gray0)] border border-[var(--gray2)] rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--yellow0)] dark:focus:ring-[var(--gray0)]'
           />
 
-          <button type='submit' className='btn text-[var(--gray0)] bg-[var(--green1)] hover:bg-[var(--green2)]'>Sign Up</button>
+          <button type='submit' className='btn text-[var(--gray0)] bg-[var(--green1)] hover:bg-[var(--green2)] dark:text-[var(--gray2)]'>Sign Up</button>
 
         </form>
       
