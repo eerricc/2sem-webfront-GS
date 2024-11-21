@@ -10,6 +10,7 @@ import Error from './routes/Error/Error.jsx'
 import Login from './routes/Login/Login.jsx'
 import SignUp from './routes/SignUp/SignUp.jsx'
 import Solution from './routes/Solution/Solution.jsx'
+import Test from './routes/Test/Test.jsx'
 
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
@@ -24,6 +25,7 @@ const router = createBrowserRouter([
       {path:'/login', element:<Login/>},
       {path:'/signup', element:<SignUp/>},
       {path:'/solution', element:<Solution/>},
+      {path:'/test', element:<Test/>}
     ]
   }
 ])
